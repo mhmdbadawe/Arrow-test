@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The ARROW Model Entry Test</title>
+  <link rel="stylesheet" href="arrow-style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔥 The <span class="highlight">ARROW</span> Model <span class="highlight-red">Entry Test</span></h1>
+    <p class="subtext">Precision snipers only. Prove you understand the algo hunt.</p>
+    <p class="timer" id="timer">Time Remaining: 15:00</p>
+
+    <form id="arrowForm">
+      <div class="question">
+        <label>1. What’s the primary purpose of HTF bias in the ARROW Model?</label>
+        <input type="radio" name="q1" value="scalping"> To scalp quick entries on lower timeframes<br>
+        <input type="radio" name="q1" value="liquidity"> To define the draw on liquidity and establish directional context<br>
+        <input type="radio" name="q1" value="immediate"> To confirm immediate entry signals without LTF analysis<br>
+        <input type="radio" name="q1" value="opposing"> To target opposing PD Arrays without session alignment
+      </div>
+
+      <div class="question">
+        <label>2. Under ARROW, when is a liquidity sweep considered valid for entry?</label>
+        <input type="radio" name="q2" value="wick"> When price wicks past a high/low but doesn’t displace<br>
+        <input type="radio" name="q2" value="displacement"> When it’s followed by a displacement and shift in market state<br>
+        <input type="radio" name="q2" value="outside"> When it occurs outside the Golden Pocket<br>
+        <input type="radio" name="q2" value="dead"> When it happens during a dead session with low volume
+      </div>
+
+      <div class="question">
+        <label>3. What invalidates an ARROW entry inside the Golden Pocket (0.618–0.705 Fib)?</label>
+        <input type="radio" name="q3" value="closeBelow"> A candle close below or above the GP with no retest<br>
+        <input type="radio" name="q3" value="vshape"> A V-shaped reversal confirming algo intent<br>
+        <input type="radio" name="q3" value="smt"> An SMT divergence aligning with the setup<br>
+        <input type="radio" name="q3" value="breaker"> A breaker block forming above the GP
+      </div>
+
+      <div class="question">
+        <label>4. Which time window does ARROW prioritize for executing trades?</label>
+        <input type="radio" name="q4" value="asia"> Asian session for low volatility setups<br>
+        <input type="radio" name="q4" value="killzones"> NY and London killzones for algo-driven liquidity hunts<br>
+        <input type="radio" name="q4" value="random"> Random times outside major sessions for flexibility<br>
+        <input type="radio" name="q4" value="holiday"> Bank holiday periods for reduced noise
+      </div>
+
+      <div class="question">
+        <label>5. What defines a Unicorn Setup in the ARROW Model?</label>
+        <input type="radio" name="q5" value="single"> A single FVG with no overlapping structure<br>
+        <input type="radio" name="q5" value="unicorn"> Breaker + overlapping FVG in GP + SMT + CE confirming reversal<br>
+        <input type="radio" name="q5" value="trendline"> A trendline break with high volatility<br>
+        <input type="radio" name="q5" value="soup"> A soup pattern without displacement
+      </div>
+
+      <div class="question">
+        <label>6. How does ARROW use SMT divergence to confirm a trade?</label>
+        <input type="radio" name="q6" value="sync"> When correlated pairs move in sync with no deviation<br>
+        <input type="radio" name="q6" value="sweep"> When one pair sweeps liquidity and the correlated pair doesn’t<br>
+        <input type="radio" name="q6" value="golden"> When both pairs hit the Golden Pocket simultaneously<br>
+        <input type="radio" name="q6" value="dead"> When SMT aligns with a dead session structure
+      </div>
+
+      <div class="question">
+        <label>7. What’s the role of a valid PD Array in an ARROW trade?</label>
+        <input type="radio" name="q7" value="random"> To act as a random entry trigger without confirmation<br>
+        <input type="radio" name="q7" value="reaction"> To provide a reaction pattern (e.g., FVG, OB, Breaker) post-sweep<br>
+        <input type="radio" name="q7" value="htf"> To replace the need for HTF bias<br>
+        <input type="radio" name="q7" value="liquidity"> To target liquidity without displacement
+      </div>
+
+      <div class="question">
+        <label>8. Why does ARROW reject trades outside the Golden Pocket?</label>
+        <input type="radio" name="q8" value="avoid"> To avoid premium/discount zones<br>
+        <input type="radio" name="q8" value="precision"> Because it lacks precision and algo footprint alignment<br>
+        <input type="radio" name="q8" value="eq"> To focus solely on HTF equilibrium<br>
+        <input type="radio" name="q8" value="stop"> Because it guarantees a 5-point stop loss
+      </div>
+
+      <div class="question">
+        <label>9. What’s the significance of the V-Shaped Reversal in ARROW?</label>
+        <input type="radio" name="q9" value="random"> It signals a random wick with no algo intent<br>
+        <input type="radio" name="q9" value="return"> It confirms quick algo return into an OB/FVG after a wick<br>
+        <input type="radio" name="q9" value="failed"> It indicates a failed liquidity sweep<br>
+        <input type="radio" name="q9" value="time"> It replaces the need for time confirmation
+      </div>
+
+      <div class="question">
+        <label>10. How does ARROW define risk when a trade is taken?</label>
+        <input type="radio" name="q10" value="fixed"> A fixed 10-point stop loss regardless of structure<br>
+        <input type="radio" name="q10" value="invalidation"> Invalidation via candle close under GP or static 5-point SL<br>
+        <input type="radio" name="q10" value="none"> No stop loss to maximize flexibility<br>
+        <input type="radio" name="q10" value="htf"> Risk based on HTF equilibrium alone
+      </div>
+
+      <div class="question">
+        <label>11. What’s the Soup Pattern in ARROW, and why does it matter?</label>
+        <input type="radio" name="q11" value="random"> A random price move with no correlation<br>
+        <input type="radio" name="q11" value="smt"> One pair sweeps liquidity, correlated pair doesn’t—showing SMT divergence<br>
+        <input type="radio" name="q11" value="ce"> A CE respect pattern with no displacement<br>
+        <input type="radio" name="q11" value="breaker"> A breaker block forming outside the GP
+      </div>
+
+      <div class="question">
+        <label>12. When is a CE (Consolidation Expansion) considered valid in ARROW?</label>
+        <input type="radio" name="q12" value="respected"> When daily wick CE is respected, confirming imbalance<br>
+        <input type="radio" name="q12" value="nohtf"> When it occurs without HTF bias<br>
+        <input type="radio" name="q12" value="break"> When it breaks structure without a sweep<br>
+        <input type="radio" name="q12" value="dead"> When it aligns with a dead session
+      </div>
+
+      <div class="question">
+        <label>13. What’s the target selection priority in ARROW after a valid entry?</label>
+        <input type="radio" name="q13" value="random"> Random price levels with high volatility<br>
+        <input type="radio" name="q13" value="external"> Low-hanging fruit like external liquidity near HTF EQs<br>
+        <input type="radio" name="q13" value="internal"> Internal liquidity within the Golden Pocket<br>
+        <input type="radio" name="q13" value="opposing"> Opposing PD Arrays without premium/discount focus
+      </div>
+
+      <div class="question">
+        <label>14. Why does ARROW avoid trading during dead sessions?</label>
+        <input type="radio" name="q14" value="reduce"> To reduce risk with lower volatility<br>
+        <input type="radio" name="q14" value="algo"> Because algo timing behavior is absent, breaking precision<br>
+        <input type="radio" name="q14" value="scalping"> To focus on scalping opportunities<br>
+        <input type="radio" name="q14" value="unicorn"> Because it guarantees a Unicorn Setup
+      </div>
+
+      <div class="question">
+        <label>15. What confirms a Reaction Pattern in ARROW post-liquidity sweep?</label>
+        <input type="radio" name="q15" value="stall"> Price stalling with no PD Array response<br>
+        <input type="radio" name="q15" value="reaction"> A break in market structure<br>
+        <input type="radio" name="q15" value="wick"> A wick touching the GP without closure<br>
+        <input type="radio" name="q15" value="trendline"> A trendline break with no time alignment
+      </div>
+
+      <button type="submit">Submit Answers</button>
+      <p id="result"></p>
+      <div id="score-details" class="hidden"></div>
+    </form>
+  </div>
+
+  <script src="arrow-script.js"></script>
+</body>
+</html>
